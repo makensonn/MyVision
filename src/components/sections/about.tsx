@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import makPortrait from "@/assets/mak-portrait.png.asset.json";
+import makPortrait from "@/assets/mak-portrait.webp";
 
 
 const stats = [
@@ -56,7 +56,7 @@ export function About() {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-strong glow-ring">
               <img
-                src={makPortrait.url}
+                src={makPortrait}
                 alt="Portrait of Makenson 'Mak' Noel"
                 width={1024}
                 height={1280}

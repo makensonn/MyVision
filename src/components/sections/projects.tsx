@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, FileText, Sparkles, Github } from "lucide-react";
 import { TiltCard } from "@/components/ui/tilt-card";
-import bridgeOpsImg from "@/assets/project-bridgeops.png.asset.json";
-import gasmeImg from "@/assets/project-gasme.png.asset.json";
-import shopwaveImg from "@/assets/project-shopwave.png.asset.json";
-import aslImg from "@/assets/project-asl.png.asset.json";
-import flowpilotImg from "@/assets/project-flowpilot.png.asset.json";
-import portfolioOsImg from "@/assets/project-portfolio-os.png.asset.json";
+import bridgeOpsImg from "@/assets/project-bridgeops.webp";
+import gasmeImg from "@/assets/project-gasme.webp";
+import shopwaveImg from "@/assets/project-shopwave.webp";
+import aslImg from "@/assets/project-asl.webp";
+import flowpilotImg from "@/assets/project-flowpilot.webp";
+import portfolioOsImg from "@/assets/project-portfolio-os.webp";
 
 type Project = {
   title: string;
@@ -23,16 +23,16 @@ const projects: Project[] = [
     tagline:
       "A modern legal operations command center — unifying intake, leads, cases, phone activity, workflows, and analytics into one clean dashboard. Portfolio-safe mock data, inspired by Filevine, Neos, Lead Docket & Dialpad.",
     tech: ["Next.js", "TypeScript", "Tailwind", "Postgres", "APIs"],
-    image: bridgeOpsImg.url,
+    image: bridgeOpsImg,
     status: "live",
-    links: { github: "https://github.com/makensonn/BridgeOps", demo: "https://bridge-ops.vercel.app/", caseStudy: "#" },
+    links: { github: "https://github.com/makensonn", demo: "#", caseStudy: "#" },
   },
   {
     title: "FlowPilot",
     tagline:
       "AI-driven workflow & automation platform — visual builder for triggers, enrichment, decisioning, and multi-tool actions across Slack, Notion, HubSpot, and OpenAI.",
     tech: ["Next.js", "OpenAI", "Zapier API", "Postgres"],
-    image: flowpilotImg.url,
+    image: flowpilotImg,
     status: "soon",
     links: { github: "https://github.com/makensonn" },
   },
@@ -41,7 +41,7 @@ const projects: Project[] = [
     tagline:
       "Smart fuel savings & route planning app — finds the cheapest nearby stations, plans optimized routes, and shows estimated savings in real time.",
     tech: ["React Native", "Mapbox", "Node.js"],
-    image: gasmeImg.url,
+    image: gasmeImg,
     status: "soon",
     links: { github: "https://github.com/makensonn" },
   },
@@ -50,7 +50,7 @@ const projects: Project[] = [
     tagline:
       "A modern e-commerce experience with a bold neon aesthetic — full storefront, cart, checkout, and product discovery flows.",
     tech: ["Next.js", "Stripe", "Shopify", "Tailwind"],
-    image: shopwaveImg.url,
+    image: shopwaveImg,
     status: "soon",
     links: { github: "https://github.com/makensonn" },
   },
@@ -59,7 +59,7 @@ const projects: Project[] = [
     tagline:
       "Real-time American Sign Language recognition using computer vision and on-device ML — 21-point landmark tracking with sub-17ms latency.",
     tech: ["Python", "MediaPipe", "TensorFlow"],
-    image: aslImg.url,
+    image: aslImg,
     status: "soon",
     links: { github: "https://github.com/makensonn" },
   },
@@ -68,7 +68,7 @@ const projects: Project[] = [
     tagline:
       "A developer showcase platform — a fully themeable portfolio builder with projects, blog, resume, and contact modules baked in.",
     tech: ["Next.js", "MDX", "Tailwind", "Framer Motion"],
-    image: portfolioOsImg.url,
+    image: portfolioOsImg,
     status: "soon",
     links: { github: "https://github.com/makensonn" },
   },
