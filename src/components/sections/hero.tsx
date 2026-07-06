@@ -23,6 +23,8 @@ export function Hero() {
         className="absolute inset-0 -z-20 h-full w-full object-cover"
         width={1920}
         height={1280}
+        fetchPriority="high"
+        decoding="async"
       />
       <div
         aria-hidden
