@@ -1,0 +1,278 @@
+import { a as __toESM } from "../_runtime.mjs";
+import { c as require_jsx_runtime } from "../_libs/@react-three/drei+[...].mjs";
+import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { r as motion } from "../_libs/framer-motion.mjs";
+import { _ as ExternalLink, b as ArrowUpRight, g as FileText, h as Github, r as Sparkles } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/projects-CByh0eG3.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+function TiltCard({ children, className, max = 10 }) {
+	const ref = (0, import_react.useRef)(null);
+	const glow = (0, import_react.useRef)(null);
+	const onMove = (e) => {
+		const el = ref.current;
+		if (!el) return;
+		const rect = el.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		const px = x / rect.width - .5;
+		const py = y / rect.height - .5;
+		el.style.transform = `perspective(900px) rotateX(${(-py * max).toFixed(2)}deg) rotateY(${(px * max).toFixed(2)}deg) translateZ(0)`;
+		if (glow.current) {
+			glow.current.style.background = `radial-gradient(400px circle at ${x}px ${y}px, oklch(0.66 0.26 0 / 0.25), transparent 60%)`;
+			glow.current.style.opacity = "1";
+		}
+	};
+	const onLeave = () => {
+		const el = ref.current;
+		if (el) el.style.transform = "perspective(900px) rotateX(0) rotateY(0)";
+		if (glow.current) glow.current.style.opacity = "0";
+	};
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		ref,
+		onMouseMove: onMove,
+		onMouseLeave: onLeave,
+		className,
+		style: {
+			transition: "transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1)",
+			willChange: "transform"
+		},
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			ref: glow,
+			"aria-hidden": true,
+			className: "pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 rounded-[inherit]"
+		}), children]
+	});
+}
+var projects = [
+	{
+		title: "BridgeOps",
+		tagline: "A modern legal operations command center — unifying intake, leads, cases, phone activity, workflows, and analytics into one clean dashboard. Portfolio-safe mock data, inspired by Filevine, Neos, Lead Docket & Dialpad.",
+		tech: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind",
+			"Postgres",
+			"APIs"
+		],
+		image: "/assets/project-bridgeops-CB4YIcfK.webp",
+		status: "live",
+		links: {
+			github: "https://github.com/makensonn/BridgeOps",
+			demo: "https://bridge-ops.vercel.app/",
+			caseStudy: "#"
+		}
+	},
+	{
+		title: "GasMe",
+		tagline: "Smart fuel savings & route planning app — finds the cheapest nearby stations, plans optimized routes, and shows estimated savings in real time.",
+		tech: [
+			"React Native",
+			"Mapbox",
+			"Node.js"
+		],
+		image: "/assets/project-gasme-DylW-kbP.webp",
+		status: "live",
+		links: {
+			github: "https://github.com/makensonn/gasme.app",
+			demo: "https://gasme-9f9h67y5a-makensonns-projects.vercel.app/",
+			caseStudy: "#"
+		}
+	},
+	{
+		title: "ShopWave",
+		tagline: "A modern e-commerce experience with a bold neon aesthetic — full storefront, cart, checkout, and product discovery flows.",
+		tech: [
+			"Next.js",
+			"Stripe",
+			"Shopify",
+			"Tailwind"
+		],
+		image: "/assets/project-shopwave-BeCXT-gc.webp",
+		status: "live",
+		links: {
+			github: "https://github.com/makensonn/ShopWave",
+			demo: "https://shop-wave-beta.vercel.app/",
+			caseStudy: "#"
+		}
+	},
+	{
+		title: "SignSpeak",
+		tagline: "Real-time American Sign Language recognition using computer vision and on-device ML — 21-point landmark tracking with sub-17ms latency.",
+		tech: [
+			"Python",
+			"MediaPipe",
+			"TensorFlow"
+		],
+		image: "/assets/project-asl-DCHcrFKB.webp",
+		status: "live",
+		links: {
+			github: "https://github.com/makensonn/SignSpeak",
+			demo: "https://sign-speak-green.vercel.app/",
+			caseStudy: "#"
+		}
+	},
+	{
+		title: "Portfolio OS",
+		tagline: "A developer showcase platform — a fully themeable portfolio builder with projects, blog, resume, and contact modules baked in.",
+		tech: [
+			"Next.js",
+			"MDX",
+			"Tailwind",
+			"Framer Motion"
+		],
+		image: "/assets/project-portfolio-os-CUJCtdu0.webp",
+		status: "live",
+		links: {
+			github: "https://github.com/makensonn/MyVision",
+			demo: "https://www.makenson.dev/",
+			caseStudy: "#"
+		}
+	},
+	{
+		title: "FlowPilot",
+		tagline: "AI-driven workflow & automation platform — visual builder for triggers, enrichment, decisioning, and multi-tool actions across Slack, Notion, HubSpot, and OpenAI.",
+		tech: [
+			"Next.js",
+			"OpenAI",
+			"Zapier API",
+			"Postgres"
+		],
+		image: "/assets/project-flowpilot-DRndP55g.webp",
+		status: "soon",
+		links: {
+			github: "https://github.com/makensonn",
+			demo: "https://bridge-ops.vercel.app/",
+			caseStudy: "#"
+		}
+	}
+];
+function ProjectCard({ p, i }) {
+	const isSoon = p.status === "soon";
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+		initial: {
+			opacity: 0,
+			y: 30
+		},
+		whileInView: {
+			opacity: 1,
+			y: 0
+		},
+		viewport: {
+			once: true,
+			margin: "-50px"
+		},
+		transition: {
+			delay: i % 4 * .08,
+			duration: .6
+		},
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(TiltCard, {
+			className: "group relative glass rounded-2xl overflow-hidden hover:border-primary/40 transition-colors duration-300 h-full",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "relative aspect-[4/3] overflow-hidden",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: p.image,
+						alt: p.title,
+						loading: "lazy",
+						width: 1600,
+						height: 1200,
+						className: "absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						"aria-hidden": true,
+						className: "absolute inset-0",
+						style: { background: "linear-gradient(180deg, transparent 0%, oklch(0.13 0.012 285 / 0.20) 60%, oklch(0.13 0.012 285 / 0.75) 100%)" }
+					}),
+					isSoon && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "absolute top-4 left-4 z-10 inline-flex items-center gap-1 text-[10px] font-mono uppercase tracking-[0.2em] px-2 py-1 rounded-full glass border border-accent/40 text-accent",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3 h-3" }), " Coming Soon"]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "absolute top-4 right-4 w-5 h-5 text-white/90 -rotate-45 group-hover:rotate-0 transition-transform z-10" })
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "p-6 space-y-4 relative",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+						className: "text-lg font-bold",
+						children: p.title
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "text-sm text-muted-foreground mt-1 leading-relaxed",
+						children: p.tagline
+					})] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "flex flex-wrap gap-1.5",
+						children: p.tech.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-[10px] font-mono px-2 py-1 rounded-md bg-white/5 border border-white/10 text-muted-foreground",
+							children: t
+						}, t))
+					}),
+					p.links && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex items-center gap-4 pt-2 border-t border-white/5",
+						children: [
+							p.links.github && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+								href: p.links.github,
+								target: "_blank",
+								rel: "noreferrer",
+								className: "inline-flex items-center gap-1 text-[11px] font-mono uppercase tracking-widest text-foreground/80 hover:text-accent transition",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Github, { className: "w-3 h-3" }), " Code"]
+							}),
+							p.links.demo && p.links.demo !== "#" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+								href: p.links.demo,
+								target: "_blank",
+								rel: "noreferrer",
+								className: "inline-flex items-center gap-1 text-[11px] font-mono uppercase tracking-widest text-foreground/80 hover:text-accent transition",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, { className: "w-3 h-3" }), " Live"]
+							}),
+							p.links.caseStudy && p.links.caseStudy !== "#" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+								href: p.links.caseStudy,
+								className: "inline-flex items-center gap-1 text-[11px] font-mono uppercase tracking-widest text-foreground/80 hover:text-accent transition",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, { className: "w-3 h-3" }), " Case Study"]
+							})
+						]
+					})
+				]
+			})]
+		})
+	});
+}
+function Projects() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		id: "projects",
+		className: "relative py-32",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "container mx-auto px-6 max-w-7xl",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "mb-16 flex items-end justify-between flex-wrap gap-6",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "space-y-4",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "font-mono text-[11px] text-accent tracking-[0.25em] uppercase",
+						children: "Featured Work"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+						className: "text-4xl md:text-6xl font-bold leading-[1.05] max-w-2xl",
+						children: [
+							"Things I've built ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-gradient-brand",
+								children: "that make an impact."
+							})
+						]
+					})]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "font-mono text-xs tracking-widest uppercase text-muted-foreground max-w-xs",
+					children: "A neon-drenched Vice City lineup — live builds & drops rolling out soon."
+				})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-5",
+				children: projects.map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProjectCard, {
+					p,
+					i
+				}, p.title))
+			})]
+		})
+	});
+}
+//#endregion
+export { Projects };
