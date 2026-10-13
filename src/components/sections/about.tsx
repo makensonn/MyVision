@@ -80,10 +80,10 @@ export function About() {
               />
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <p className="text-6xl md:text-7xl font-display italic text-white leading-none drop-shadow-2xl">
-                  Mak
+                  Makenson
                 </p>
                 <p className="text-xs font-mono tracking-[0.3em] uppercase text-white/80 mt-2">
-                  Noel · Software Developer
+                  Noel · Computer Science Graduate
                 </p>
               </div>
             </div>
