@@ -32,7 +32,7 @@ export function Nav() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className={`flex items-center justify-between rounded-full px-5 py-2.5 transition-all ${scrolled ? "glass-strong" : ""}`}>
           <a href="#" className="font-display font-bold tracking-tight text-sm leading-none flex flex-col">
-            <span>MAK</span>
+            <span>MAKENSON</span>
             <span className="text-muted-foreground">NOEL</span>
           </a>
           <nav className="hidden md:flex items-center gap-1">

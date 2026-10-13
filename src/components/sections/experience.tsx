@@ -26,22 +26,17 @@ export function Experience() {
             <div className="glass rounded-2xl p-8">
               <div className="flex items-start justify-between flex-wrap gap-3 mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold">Software Developer</h3>
-                  <p className="text-primary font-medium">The Driscoll Firm, PC</p>
+                  <h3 className="text-2xl font-bold">Computer Science Graduate</h3>
+                  <p className="text-primary font-medium">in North Carolina</p>
                 </div>
                 <span className="font-mono text-xs text-muted-foreground px-3 py-1 rounded-full border border-white/10">
                   Current
                 </span>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Built automation systems, integrations, dashboards, and AI-assisted internal tools
-                across legal intake and operations — turning manual workflows into reliable software.
+                Building software.
               </p>
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground/85">
-                <li className="flex gap-2"><span className="text-primary">▸</span> Legal intake automation across CRM &amp; case systems</li>
-                <li className="flex gap-2"><span className="text-primary">▸</span> Internal dashboards with reporting &amp; PDF export</li>
-                <li className="flex gap-2"><span className="text-primary">▸</span> Webhook + REST API integrations</li>
-                <li className="flex gap-2"><span className="text-primary">▸</span> AI-powered onboarding &amp; knowledge tooling</li>
               </ul>
             </div>
           </motion.div>

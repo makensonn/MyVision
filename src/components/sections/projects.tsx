@@ -25,7 +25,43 @@ const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind", "Postgres", "APIs"],
     image: bridgeOpsImg,
     status: "live",
-    links: { github: "https://github.com/makensonn", demo: "#", caseStudy: "#" },
+    links: { github: "https://github.com/makensonn/BridgeOps", demo: "https://bridge-ops.vercel.app/", caseStudy: "#" },
+  },
+  {
+    title: "GasMe",
+    tagline:
+      "Smart fuel savings & route planning app — finds the cheapest nearby stations, plans optimized routes, and shows estimated savings in real time.",
+    tech: ["React Native", "Mapbox", "Node.js"],
+    image: gasmeImg,
+    status: "live",
+    links: { github: "https://github.com/makensonn/gasme.app", demo: "https://gasme-9f9h67y5a-makensonns-projects.vercel.app/", caseStudy: "#" },
+  },
+  {
+    title: "ShopWave",
+    tagline:
+      "A modern e-commerce experience with a bold neon aesthetic — full storefront, cart, checkout, and product discovery flows.",
+    tech: ["Next.js", "Stripe", "Shopify", "Tailwind"],
+    image: shopwaveImg,
+    status: "live",
+    links: { github: "https://github.com/makensonn/ShopWave", demo: "https://shop-wave-beta.vercel.app/", caseStudy: "#" },
+  },
+  {
+    title: "SignSpeak",
+    tagline:
+      "Real-time American Sign Language recognition using computer vision and on-device ML — 21-point landmark tracking with sub-17ms latency.",
+    tech: ["Python", "MediaPipe", "TensorFlow"],
+    image: aslImg,
+    status: "live",
+    links: { github: "https://github.com/makensonn/SignSpeak", demo: "https://sign-speak-green.vercel.app/", caseStudy: "#" },
+  },
+  {
+    title: "Portfolio OS",
+    tagline:
+      "A developer showcase platform — a fully themeable portfolio builder with projects, blog, resume, and contact modules baked in.",
+    tech: ["Next.js", "MDX", "Tailwind", "Framer Motion"],
+    image: portfolioOsImg,
+    status: "live",
+    links: { github: "https://github.com/makensonn/MyVision", demo: "https://www.makenson.dev/", caseStudy: "#" },
   },
   {
     title: "FlowPilot",
@@ -34,43 +70,7 @@ const projects: Project[] = [
     tech: ["Next.js", "OpenAI", "Zapier API", "Postgres"],
     image: flowpilotImg,
     status: "soon",
-    links: { github: "https://github.com/makensonn" },
-  },
-  {
-    title: "GasMe",
-    tagline:
-      "Smart fuel savings & route planning app — finds the cheapest nearby stations, plans optimized routes, and shows estimated savings in real time.",
-    tech: ["React Native", "Mapbox", "Node.js"],
-    image: gasmeImg,
-    status: "soon",
-    links: { github: "https://github.com/makensonn" },
-  },
-  {
-    title: "ShopWave",
-    tagline:
-      "A modern e-commerce experience with a bold neon aesthetic — full storefront, cart, checkout, and product discovery flows.",
-    tech: ["Next.js", "Stripe", "Shopify", "Tailwind"],
-    image: shopwaveImg,
-    status: "soon",
-    links: { github: "https://github.com/makensonn" },
-  },
-  {
-    title: "ASL Hand Tracker",
-    tagline:
-      "Real-time American Sign Language recognition using computer vision and on-device ML — 21-point landmark tracking with sub-17ms latency.",
-    tech: ["Python", "MediaPipe", "TensorFlow"],
-    image: aslImg,
-    status: "soon",
-    links: { github: "https://github.com/makensonn" },
-  },
-  {
-    title: "Portfolio OS",
-    tagline:
-      "A developer showcase platform — a fully themeable portfolio builder with projects, blog, resume, and contact modules baked in.",
-    tech: ["Next.js", "MDX", "Tailwind", "Framer Motion"],
-    image: portfolioOsImg,
-    status: "soon",
-    links: { github: "https://github.com/makensonn" },
+    links: { github: "https://github.com/makensonn", demo: "https://bridge-ops.vercel.app/", caseStudy: "#" },
   },
 ];
 

@@ -63,7 +63,7 @@ export function Contact() {
                   <Send className="w-4 h-4" /> {sending ? "Sending…" : "Send a message"}
                 </Button>
                 <Button asChild variant="ghost-line" size="lg">
-                  <a href="mailto:maknoel.dev@gmail.com">
+                  <a href="mailto:makensoninoel@gmail.com">
                     <Mail className="w-4 h-4" /> Email me
                   </a>
                 </Button>
@@ -80,14 +80,14 @@ export function Contact() {
           >
             <div className="glass rounded-2xl p-6">
               <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">Email</p>
-              <a href="mailto:maknoel.dev@gmail.com" className="text-lg font-medium hover:text-accent transition-colors">
-                maknoel.dev@gmail.com
+              <a href="mailto:makensoninoel@gmail.com" className="text-lg font-medium hover:text-accent transition-colors">
+                makensoninoel@gmail.com
               </a>
             </div>
             <div className="glass rounded-2xl p-6">
               <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">Location</p>
               <p className="text-lg font-medium inline-flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent" /> New York, USA
+                <MapPin className="w-4 h-4 text-accent" /> North Carolina, USA
               </p>
             </div>
             <div className="glass rounded-2xl p-6">
